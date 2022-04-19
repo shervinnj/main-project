@@ -71,9 +71,45 @@
 //va bad to function khateh akhar make sure
 //text.value=""; chon badesh pak she
 
-let tex=document.querySelector('#add-book input');
-let btn=document.querySelector('.button');
-btn.addEventListener('click',function(e){
-    console.log(tex.value);
-    tex.value="";
+// let tex=document.querySelector('#add-book input');
+// let btn=document.querySelector('.button');
+// btn.addEventListener('click',function(e){
+//     console.log(tex.value);
+//     tex.value="";
+// })
+
+
+
+// let nu=document.querySelector('#add-book input');
+// let al=document.body;
+// let bahal=document.querySelector('a');
+// console.log(bahal);
+// al.addEventListener('mouseover',function(e){
+//     bahal.innerHTML=`x:${e.offsetX} y:${e.offsetY}`
+// })
+
+
+//projeh khodam
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+let inputText=document.querySelector('#add-book input');
+
+inputText.addEventListener('focus',function(e){
+    console.log('selected');
 })
+
+
+//ba in dastooreh balah vaghti ma input select kardim
+//barayeh ma dar consol neshon mideh ke select shode
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+inputText.addEventListener('blur',function(e){
+    console.log('unselected');
+})
+
+//ba estefadeh az in dastoor ma zamani ke unselect kardim
+//bara ma neshoon mideh ke dige ro input select nistim
+
+
+
+/
