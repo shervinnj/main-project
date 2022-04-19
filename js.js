@@ -27,7 +27,7 @@
 
 
 document.querySelector('.button').addEventListener('mouseenter',function(e){
-alert('welcome')
+console.log('mouse in');
 e.preventDefault();
 });
 
@@ -35,3 +35,14 @@ e.preventDefault();
 
 // ba estefadeh az Eventlistener va estefadeh az 
 //mouseenter ma mitoonim functionemono ejra konim
+
+//++++++++++++++++++++++++++++++++++++++++++++++
+document.querySelector('.button').addEventListener
+('mouseout',function(e){
+    console.log('mouse out');
+    e.preventDefault();
+})
+
+// dastoore mouseout barayeh inke harvaght mouse raft biroon 
+// barat function ejra koneh
+
