@@ -26,10 +26,10 @@
 // vali dar marhaleyeh aval bayad be jayeh click bezarim dblclick
 
 
-document.querySelector('.button').addEventListener('mouseenter',function(e){
-console.log('mouse in');
-e.preventDefault();
-});
+// document.querySelector('.button').addEventListener('mouseenter',function(e){
+// console.log('mouse in');
+// e.preventDefault();
+// });
 
 
 
@@ -46,14 +46,27 @@ e.preventDefault();
 // dastoore mouseout barayeh inke harvaght mouse raft biroon 
 // barat function ejra koneh
 
-let heading=document.querySelectorAll('.title')[1];
-document.body.addEventListener('mousemove',function(e){
+// let heading=document.querySelectorAll('.title')[1];
+// document.body.addEventListener('mousemove',function(e){
 
-heading.innerHTML=`x:${e.offsetX} y:${e.offsetY}`
+// heading.innerHTML=`x:${e.offsetX} y:${e.offsetY}`
 
-e.preventDefault();
-});
+// e.preventDefault();
+// });
 //ba estefadeh az in dastoot mitoonim mokhtasatr mousemoemoon ro safeh ro bedast biyarim
 //faghat zamani ke az function estefadeh mikonim bayad havasemoon bashe
 // e ke dakheleh parantez kozashtim rooyeh dastooreh 
 //ofsettX va offsetY estefadeh konim
+
+let tex=document.querySelector('#add-book input');
+let link=document.querySelector('.button');
+
+link.addEventListener('click',function(e){
+    console.log(tex.value);
+    tex.value='';
+})
+
+//ba estefadeh az in dastoor ma valu input send mikonim
+//be consol.log
+//va bad to function khateh akhar make sure
+//text.value=""; chon badesh pak she
