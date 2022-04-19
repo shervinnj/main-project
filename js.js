@@ -58,15 +58,22 @@
 // e ke dakheleh parantez kozashtim rooyeh dastooreh 
 //ofsettX va offsetY estefadeh konim
 
-let tex=document.querySelector('#add-book input');
-let link=document.querySelector('.button');
+// let tex=document.querySelector('#add-book input');
+// let link=document.querySelector('.button');
 
-link.addEventListener('click',function(e){
-    console.log(tex.value);
-    tex.value='';
-})
+// link.addEventListener('click',function(e){
+//     console.log(tex.value);
+//     tex.value='';
+// })
 
 //ba estefadeh az in dastoor ma valu input send mikonim
 //be consol.log
 //va bad to function khateh akhar make sure
 //text.value=""; chon badesh pak she
+
+let tex=document.querySelector('#add-book input');
+let btn=document.querySelector('.button');
+btn.addEventListener('click',function(e){
+    console.log(tex.value);
+    tex.value="";
+})
