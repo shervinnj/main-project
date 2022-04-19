@@ -16,11 +16,22 @@
 
 
 //+++++++++++++++++++++++++++++++++++++++++++
-document.querySelector('.button').addEventListener('dblclick',function(e){
-    console.log("duble click");
-    e.preventDefault();
-})
+// document.querySelector('.button').addEventListener('dblclick',function(e){
+//     console.log("duble click");
+//     e.preventDefault();
+// })
 
 // estedeh az tarfand Eventlistner va function barayeh inke
 // 2 bar click konim rooyeh tagemoon ta amaliyat anjam beshe
 // vali dar marhaleyeh aval bayad be jayeh click bezarim dblclick
+
+
+document.querySelector('.button').addEventListener('mouseenter',function(e){
+alert('welcome')
+e.preventDefault();
+});
+
+
+
+// ba estefadeh az Eventlistener va estefadeh az 
+//mouseenter ma mitoonim functionemono ejra konim
