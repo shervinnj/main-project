@@ -37,12 +37,23 @@ e.preventDefault();
 //mouseenter ma mitoonim functionemono ejra konim
 
 //++++++++++++++++++++++++++++++++++++++++++++++
-document.querySelector('.button').addEventListener
-('mouseout',function(e){
-    console.log('mouse out');
-    e.preventDefault();
-})
+// document.querySelector('.button').addEventListener
+// ('mouseout',function(e){
+//     console.log('mouse out');
+//     e.preventDefault();
+// })
 
 // dastoore mouseout barayeh inke harvaght mouse raft biroon 
 // barat function ejra koneh
 
+let heading=document.querySelectorAll('.title')[1];
+document.body.addEventListener('mousemove',function(e){
+
+heading.innerHTML=`x:${e.offsetX} y:${e.offsetY}`
+
+e.preventDefault();
+});
+//ba estefadeh az in dastoot mitoonim mokhtasatr mousemoemoon ro safeh ro bedast biyarim
+//faghat zamani ke az function estefadeh mikonim bayad havasemoon bashe
+// e ke dakheleh parantez kozashtim rooyeh dastooreh 
+//ofsettX va offsetY estefadeh konim
