@@ -111,5 +111,11 @@ inputText.addEventListener('blur',function(e){
 //bara ma neshoon mideh ke dige ro input select nistim
 
 
+let checkBox=document.querySelector('#hide input');
 
-/
+checkBox.checked=true;
+checkBox.checked=false;
+
+//ba estefadeh az in dastoor mitoonim megdareh 
+//pishfarze check box bezarim true ke cheked bekhore
+// ya false ke unchecked beshe
