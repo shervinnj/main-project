@@ -284,13 +284,33 @@
 // localstorage.clear() barayeh dastooreh pak kardaneh koleh etelaate local storage hast yani nemidoonim az ghable chi safe kardim
 
 
-let arr=["shervin","nj"];
+// let arr=["shervin","nj"];
 
-localStorage.setItem('array',arr)
+// localStorage.setItem('array',arr)
 
-let get=localStorage.getItem('array').split(',');
-console.log(get)
+// let get=localStorage.getItem('array').split(',');
+// console.log(get)
 
 //ma dar dastooreh balah az split(',') estefadeh kardim
 //chon zamani ke spilit nabashe arayero be soorateh string save mikoneh
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+let obj={name:'shervin',lastname:"nj"};
+localStorage.setItem('object',JSON.stringify(obj));
+let get=JSON.parse(localStorage.getItem('object'));
+console.log(get);
+// dar mesaleh balah ma az dastoore json estefadeh kardim chon zamani ke ma file safe kardim 
+//file besoorateh object bood yani hich mozoooyi nadasht faghat minevesht object
+//to in mesal get az dastooreh Json baz estefadeh kardim va tabdilesh kardim be file mordeh delkhah
+
+
+
+
+
+
+
+ 
+
+
 
