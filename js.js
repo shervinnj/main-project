@@ -284,3 +284,13 @@
 // localstorage.clear() barayeh dastooreh pak kardaneh koleh etelaate local storage hast yani nemidoonim az ghable chi safe kardim
 
 
+let arr=["shervin","nj"];
+
+localStorage.setItem('array',arr)
+
+let get=localStorage.getItem('array').split(',');
+console.log(get)
+
+//ma dar dastooreh balah az split(',') estefadeh kardim
+//chon zamani ke spilit nabashe arayero be soorateh string save mikoneh
+
