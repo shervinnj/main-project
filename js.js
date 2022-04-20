@@ -296,18 +296,84 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-let obj={name:'shervin',lastname:"nj"};
-localStorage.setItem('object',JSON.stringify(obj));
-let get=JSON.parse(localStorage.getItem('object'));
-console.log(get);
+// let obj={name:'shervin',lastname:"nj"};
+// localStorage.setItem('object',JSON.stringify(obj));
+// let get=JSON.parse(localStorage.getItem('object'));
+// console.log(get);
 // dar mesaleh balah ma az dastoore json estefadeh kardim chon zamani ke ma file safe kardim 
 //file besoorateh object bood yani hich mozoooyi nadasht faghat minevesht object
 //to in mesal get az dastooreh Json baz estefadeh kardim va tabdilesh kardim be file mordeh delkhah
 
 
+//+++++++++++++++++++++++++++++++++++++++++++
+
+// let obj={name:'shervin',lastname:'nj'};
+// localStorage.setItem('object',JSON.stringify(obj));
+// let jason=JSON.parse(localStorage.getItem('object'))
 
 
+// console.log(jason);
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+let inputText=document.querySelector('#add-book input');
+let btn=document.querySelector('.button');
+let ul=document.querySelector('ul');
+let spandelete='<span class="delete">حذف</span>';
+
+btn.addEventListener('click',function(e){
+    let li=document.createElement('li');
+    let span=document.createElement('span');
+    span.className='name';
+    span.innerHTML=inputText.value;
+    li.appendChild(span);
+    li.innerHTML+=spandelete;
+    ul.appendChild(li);
+
+    storeToStorage(inputText.value)
+
+    inputText.value='';
+
+
+    e.preventDefault();
+
+})
+
+document.addEventListener('DOMContentLoaded',function(e){
+    if(localStorage.getItem('tasks')===null){
+        tasks=[];
+    }else{
+        tasks=localStorage.getItem('tasks').split(',')
+    }
+
+    for(let item of tasks){
+
+    let li=document.createElement('li');
+    let span=document.createElement('span');
+    span.className='name';
+    span.innerHTML=item;
+    li.appendChild(span);
+    li.innerHTML+=spandelete;
+    ul.appendChild(li);
+    }
+
+
+    
+})
+
+function storeToStorage(task){
+let tasks;
+if(localStorage.getItem('tasks')===null){
+    tasks=[];
+    }else{
+        tasks=localStorage.getItem('tasks').split(',');
+    }
+    tasks.push(task);
+
+    localStorage.setItem('tasks',tasks);
+
+
+}
+//lockal storage tasks
 
 
  
