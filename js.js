@@ -93,29 +93,48 @@
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-let inputText=document.querySelector('#add-book input');
+// let inputText=document.querySelector('#add-book input');
 
-inputText.addEventListener('focus',function(e){
-    console.log('selected');
-})
+// inputText.addEventListener('focus',function(e){
+//     console.log('selected');
+// })
 
 
 //ba in dastooreh balah vaghti ma input select kardim
 //barayeh ma dar consol neshon mideh ke select shode
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-inputText.addEventListener('blur',function(e){
-    console.log('unselected');
-})
+// inputText.addEventListener('blur',function(e){
+//     console.log('unselected');
+// })
 
 //ba estefadeh az in dastoor ma zamani ke unselect kardim
 //bara ma neshoon mideh ke dige ro input select nistim
 
 
-let checkBox=document.querySelector('#hide input');
+// let checkBox=document.querySelector('#hide input');
 
-checkBox.checked=true;
-checkBox.checked=false;
+// checkBox.checked=true;
+// checkBox.checked=false;
 
 //ba estefadeh az in dastoor mitoonim megdareh 
 //pishfarze check box bezarim true ke cheked bekhore
 // ya false ke unchecked beshe
+
+
+
+ let checkBox=document.querySelector('#hide input');
+ let heading=document.querySelector('.title')[1];
+ let ul=document.querySelectorAll('ul');
+
+ checkBox.addEventListener('click',function(e){
+     if(checkBox.checked){
+         heading.style.display='none';
+         ul.style.display='none';
+     }else{
+        heading.style.display='initial';
+        ul.style.display='initial';
+     }
+ })
+ //astefadeh az dastooreh if va css toonestim
+ //zamani ke click mikonim rooyeh check box ye elemant hazf beshe 
+ 
