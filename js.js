@@ -122,19 +122,147 @@
 
 
 
- let checkBox=document.querySelector('#hide input');
- let heading=document.querySelector('.title')[1];
- let ul=document.querySelectorAll('ul');
+//  let checkBox=document.querySelector('#hide input');
+//  let heading=document.querySelectorAll('.title')[1];
+//  let ul=document.querySelector('ul');
 
- checkBox.addEventListener('click',function(e){
-     if(checkBox.checked){
-         heading.style.display='none';
-         ul.style.display='none';
-     }else{
-        heading.style.display='initial';
-        ul.style.display='initial';
-     }
- })
+//  checkBox.addEventListener('click',function(e){
+//      if(checkBox.checked){
+//          heading.style.display='none';
+//          ul.style.display='none';
+//      }else{
+//         heading.style.display='initial';
+//         ul.style.display='initial';
+//      }
+//  })
  //astefadeh az dastooreh if va css toonestim
  //zamani ke click mikonim rooyeh check box ye elemant hazf beshe 
+
+//  let checkBox=document.querySelector('#hide input');
+//  let heading=document.querySelectorAll('.title')[1];
+//  let ul=document.querySelector('ul');
  
+
+//  checkBox.addEventListener('click',function(e){
+//      if(checkBox.checked){
+//          heading.style.display='none';
+//          ul.style.display='none';
+//      }else{
+//          heading.style.display='initial';
+//          ul.style.display='initial';
+//      }
+//  })
+
+
+ //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// let link=document.querySelector('.button');
+// let inputText=document.querySelector('#add-book input');
+// let ul=document.querySelector('ul');
+
+// let spanDelete='<span class="delete">حذف</span>';
+
+// link.addEventListener('click',function(e){
+
+//     let li=document.createElement('li');
+//     let spanName=document.createElement('span');
+//     spanName.className='name';
+//     spanName.innerHTML=inputText.value;
+//     li.appendChild(spanName);
+//     li.innerHTML +=spanDelete;
+//     ul.appendChild(li);
+//     inputText.value='';
+
+// })
+
+
+// let btn=document.querySelector('.button');
+// let inputText=document.querySelector('#add-book input');
+// let ul=document.querySelector('ul');
+// let spanDelete='<span class="delete">حذف</span>';
+
+// btn.addEventListener('click',function(e){
+//     let li=document.createElement('li');
+//     let span=document.createElement('span');
+//     let spand=document.createElement('span')
+//     span.className='name';
+//     spand.className='delete';
+//      spand.innerHTML='delete';
+//     span.innerHTML=inputText.value;
+//     li.appendChild(span);
+//     li.appendChild(spand);
+//     // li.innerHTML =li.innerHTML+spanDelete;
+//     ul.appendChild(li);
+//     inputText.value='';
+    
+// })
+
+// let btn=document.querySelector('.button');
+// let inputText=document.querySelector('#add-book input');
+// let ul=document.querySelector('ul');
+// let spanDelete='<span class="delete">حذف</span>';
+
+// btn.addEventListener('click',function(e){
+// let li=document.createElement('li');
+// let span=document.createElement('span');
+// span.className='name';
+// span.innerHTML=inputText.value;
+// li.appendChild(span);
+// li.innerHTML +=spanDelete;
+// ul.appendChild(li);
+
+// })
+// let btn=document.querySelector('.button');
+// let inputText=document.querySelector('#add-book input');
+// let ul=document.querySelector('ul');
+// let spanDelete='<span class="delete">حذف</span>';
+
+// btn.addEventListener('click',function(e){
+//     let li=document.createElement('li');
+//     let span=document.createElement('span');
+//     span.className='name';
+//     span.innerHTML=inputText.value;
+//     li.appendChild(span);
+//     li.innerHTML +=spanDelete;
+//     ul.appendChild(li);
+//     inputText.Value="";
+
+
+// })
+
+let btn=document.querySelector('.button');
+let inputText=document.querySelector('#add-book input');
+let ul=document.querySelector('ul');
+let spanDelete='<span class="delete">حذف</span>';
+
+btn.addEventListener('click',function(){
+    let li=document.createElement('li');
+    let span=document.createElement('span');
+    span.className='name';
+    span.innerHTML=inputText.value;
+    li.appendChild(span);
+    li.innerHTML +=spanDelete;
+    ul.appendChild(li);
+    inputText.value='';
+
+})
+//+++++++++++++++++++   (KHELI MOHEM) +++++++++++++++++++++++
+
+// dar khateh aval ma clide btn ya hamoon button select mikonim
+//dar khat dovom ma inputText ya hamoon jayi ke type mikonim dar tag input ono select mikonim
+// va bad in 2 ta ro bayad berizim to tag ul
+// dar khateh bad tag ul select mikonim
+//va dar khat badeh ul miyam spanDelet tarif miikonim asoon tareh intori
+ //va miyayim rooyi btn ke select kardeh boodim ye addEventListenr gharar midim
+ //to addEventlistener ma karesho mizarim royeh click va function tarif mikonim
+ // dar function dar khateh aval bayad ye li besazim 
+ //dar khateh dovom bayad ye tageh span besazim ke zamani ke add book dakhelesh type mikonim
+ //baramoon dakhel li va dar li tageh span onja dorostesh mikonim
+ //va hala be tage span class name midim
+ //va dar khateh bad inputText.value mirizim to taghe span.interHTML
+ //va dar khateh bad li mizarim babayeh span
+//  va khateh bad spanDelete ke neveshteh boodim be hamrah li Inner html mirizim to lihtml
+//va dar nahayad tageh ul ke balah tarif kardeh boodim mizarim babayeh li
+
+
