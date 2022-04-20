@@ -231,22 +231,22 @@
 
 // })
 
-let btn=document.querySelector('.button');
-let inputText=document.querySelector('#add-book input');
-let ul=document.querySelector('ul');
-let spanDelete='<span class="delete">حذف</span>';
+// let btn=document.querySelector('.button');
+// let inputText=document.querySelector('#add-book input');
+// let ul=document.querySelector('ul');
+// let spanDelete='<span class="delete">حذف</span>';
 
-btn.addEventListener('click',function(){
-    let li=document.createElement('li');
-    let span=document.createElement('span');
-    span.className='name';
-    span.innerHTML=inputText.value;
-    li.appendChild(span);
-    li.innerHTML +=spanDelete;
-    ul.appendChild(li);
-    inputText.value='';
+// btn.addEventListener('click',function(){
+//     let li=document.createElement('li');
+//     let span=document.createElement('span');
+//     span.className='name';
+//     span.innerHTML=inputText.value;
+//     li.appendChild(span);
+//     li.innerHTML +=spanDelete;
+//     ul.appendChild(li);
+//     inputText.value='';
 
-})
+// })
 //+++++++++++++++++++   (KHELI MOHEM) +++++++++++++++++++++++
 
 // dar khateh aval ma clide btn ya hamoon button select mikonim
@@ -264,5 +264,23 @@ btn.addEventListener('click',function(){
  //va dar khateh bad li mizarim babayeh span
 //  va khateh bad spanDelete ke neveshteh boodim be hamrah li Inner html mirizim to lihtml
 //va dar nahayad tageh ul ke balah tarif kardeh boodim mizarim babayeh li
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// localStorage.setItem('shervin','nj');
+// localStorage.setItem('shervin2','nj2');
+// localStorage.setItem('shervin3','nj3');
+// localStorage.setItem('shervin4','nj4');
+// let name=localStorage.getItem('shervin');
+
+// localStorage.clear();
+// console.log(name);
+
+
+
+//astefadeh az local storege barayeh save kardaneh
+//etelaat estefadeh mishe ta zamani ke refresh kardim 
+// hich gooneh moshkeli pish nayad
+// localstorage.clear() barayeh dastooreh pak kardaneh koleh etelaate local storage hast yani nemidoonim az ghable chi safe kardim
 
 
